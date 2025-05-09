@@ -1,0 +1,44 @@
+/* floating alert container */
+.alert-floating {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    min-width: 200px;
+    max-width: 300px;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.25rem;
+    background: rgba(0, 0, 0, 0.5);  /* semi-transparent dark bg */
+    color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    animation: fadeInOut 5s forwards;
+    z-index: 1050; /* above most page elements */
+  }
+  
+  /* success variant */
+  .alert-success {
+    background: rgba(40, 167, 69, 0.85);  /* semi-transparent green */
+  }
+  
+  /* fade in quickly, stay, then fade out */
+  @keyframes fadeInOut {
+    0%   { opacity: 0; transform: translateY(-10px); }
+    10%  { opacity: 1; transform: translateY(0);    }
+    80%  { opacity: 1; transform: translateY(0);    }
+    100% { opacity: 0; transform: translateY(-10px); }
+  }
+  
+  /* close-button if you want one */
+  .alert-floating .close-btn {
+    position: absolute;
+    top: 0.25rem;
+    right: 0.5rem;
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    line-height: 1;
+    color: inherit;
+    cursor: pointer;
+  }
+  

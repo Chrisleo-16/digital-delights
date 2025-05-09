@@ -11,7 +11,7 @@ import ProductDetails from './components/ProductDetails';
 import Navbar from './components/Navbar';
 import AddProducts from './components/AddProduct';
 import Cart from './components/Cart';
-import Chatbot from './components/Chatbot';
+import Chatbot from './components/ChatBot';
 import AboutUs from './components/About';
 import { CartProvider } from './context/CartContext';
 import ContactUs from './components/ContactUs';
